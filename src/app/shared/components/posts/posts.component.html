@@ -1,0 +1,9 @@
+<!-- <p class="alert alert-info" *ngFor="let title of postsTitleArr">
+  {{ title }}
+</p> -->
+
+<div *ngIf="postsTitleArr$ | async as data">
+    <p class="alert alert-info" *ngFor="let title of data">
+        {{ title }}
+      </p>
+</div>
