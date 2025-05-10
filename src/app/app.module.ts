@@ -9,6 +9,12 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { HomeComponent } from './shared/components/home/home.component';
 import { PostsComponent } from './shared/components/posts/posts.component';
 import { TodosComponent } from './shared/components/todos/todos.component';
+import { ObservablesDetailsComponent } from './shared/components/observables-details/observables-details.component';
+import { SubjectObservableTypeComponent } from './shared/components/subject-observable-type/subject-observable-type.component';
+import { UsernameFormComponent } from './shared/components/subject-observable-type/username-form/username-form.component';
+import { UsernameOneComponent } from './shared/components/subject-observable-type/username-one/username-one.component';
+import { UsernameTwoComponent } from './shared/components/subject-observable-type/username-two/username-two.component';
+import { UsernameThreeComponent } from './shared/components/subject-observable-type/username-three/username-three.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +22,13 @@ import { TodosComponent } from './shared/components/todos/todos.component';
     NavbarComponent,
     HomeComponent,
     PostsComponent,
-    TodosComponent
+    TodosComponent,
+    ObservablesDetailsComponent,
+    SubjectObservableTypeComponent,
+    UsernameFormComponent,
+    UsernameOneComponent,
+    UsernameTwoComponent,
+    UsernameThreeComponent
   ],
   imports: [
     BrowserModule,
@@ -27,3 +39,5 @@ import { TodosComponent } from './shared/components/todos/todos.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

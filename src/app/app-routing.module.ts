@@ -3,6 +3,8 @@ import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./shared/components/home/home.component";
 import { PostsComponent } from "./shared/components/posts/posts.component";
 import { TodosComponent } from "./shared/components/todos/todos.component";
+import { ObservablesDetailsComponent } from "./shared/components/observables-details/observables-details.component";
+import { SubjectObservableTypeComponent } from "./shared/components/subject-observable-type/subject-observable-type.component";
 
 
 const routes : Routes = [
@@ -22,7 +24,15 @@ const routes : Routes = [
     {
         path: 'todos',
         component: TodosComponent
-    }
+    },
+    {
+        path: 'observables',
+        component: ObservablesDetailsComponent
+    },
+    {
+        path: 'subject',
+        component: SubjectObservableTypeComponent
+    },
 ]
 
 

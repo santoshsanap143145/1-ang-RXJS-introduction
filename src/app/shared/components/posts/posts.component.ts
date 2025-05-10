@@ -23,11 +23,13 @@ export class PostsComponent implements OnInit {
     //   console.log(res);
     // });
 
-    // this._postsService.fetchAllPosts()
-    //     .subscribe((res: Array<any>) => {
-    //       this.postsTitleArr = res
-    //   });
 
+    this._postsService.fetchAllPosts()
+        .subscribe((res: Array<any>) => {
+          this.postsTitleArr = res
+      });
+
+      //below is other way 
       this.postsTitleArr$ = this._postsService.fetchAllPosts()
   }
 
